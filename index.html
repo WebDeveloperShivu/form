@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+  <body>
+
+    <div class="container">
+        <h1 class="text-center">Registration Form</h1>
+        <div class="row b-flex justify-content-center">
+            <div class="form-group px-3">
+                <button type="submit" class="btn btn-primary ">Add</button>
+            </div>
+            <div class="form-group px-3">
+                <button type="submit" class="btn btn-primary ">Add</button>
+            </div>
+            <div class="form-group px-3">
+                <button type="submit" class="btn btn-primary ">Add</button>
+            </div>
+            <div class="form-group px-3">
+                <button type="submit" class="btn btn-primary ">Add</button>
+            </div>
+            <div class="form-group px-3">
+                <button type="submit" class="btn btn-primary ">Add</button>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text"
+                      class="form-control" name="name" id="" aria-describedby="helpId" placeholder="">
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Date-of-birth</label>
+                   
+                    <input type="date" class="form-control birthdate" aria-describedby="sizing-addon1" id="id_dateOfBirth" name="birthdate" required="">
+                                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="">AGE</label>
+                       
+                        <input type="text" class="form-control age" aria-describedby="sizing-addon1"  placeholder="Enter age" name="age" readonly="">
+                      
+                      </div>
+                   </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Date-of-Joining</label>
+                    <input type="date"
+                      class="form-control joindate" name="doj" id="id_dateOfjoining" aria-describedby="helpId" placeholder="">
+                      <span id="msg"></span>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Mobile</label>
+                    <input type="text"
+                      class="form-control" name="mobile" id="" aria-describedby="helpId" placeholder="">
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Address</label>
+                    <input type="text"
+                      class="form-control" name="address" id="" aria-describedby="helpId" placeholder="">
+                    
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">City</label>
+                    <select name="city" id="">
+                        <option value="1">kanpur</option>
+                        <option value="1">agra</option>
+                        <option value="2">surat</option>
+                        <option value="3">jhansi</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">State</label>
+                    <select name="city" id="">
+                        <option value="1">UP</option>
+                        <option value="2">MP</option>
+                        <option value="3">GJ</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Country</label>
+                    <select name="city" id="">
+                        <option value="1">INDIA</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>College</th>
+                    <th>MAX</th>
+                    <th>Obtained</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <input type="text" class="form-control" name="imClass" id="" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="imCollege" id="" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="imObtaining" id="imgiven" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="imObtained" id="imtotal" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="im%" id="impersentage" aria-describedby="helpId" placeholder="" disabled></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" class="form-control" name="ugClass" id="" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="ugCollege" id="" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="ugObtaining" id="uggiven" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="ugObtained" id="ugtotal" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="ug%" id="ugpersentage" aria-describedby="helpId" placeholder="" disabled></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" class="form-control" name="pgClass" id="" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="pgCollege" id="" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="pgObtaining" id="pggiven" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="pgObtained" id="pgtotal" aria-describedby="helpId" placeholder=""></td>
+                    <td> <input type="text" class="form-control" name="pg%" id="pgpersentage" aria-describedby="helpId" placeholder="" disabled></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row b-flex justify-content-end">
+            <div class="col-md-4 ">
+                <div class="form-group">
+                    <label for="">Overall</label>
+                    <input type="text"
+                      class="form-control" name="overall" id="overallpersentage" aria-describedby="helpId" placeholder="" disabled>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+     <!-- <script  src="js/script.js"></script> -->
+     <script>
+
+        $(document).ready(function() {
+
+
+           $(".birthdate").change(function() {
+             var bvalue = $(".birthdate").val();            
+             var dob = new Date(bvalue);             
+              console.log(dob);
+           });
+
+           $(".joindate").change(function() {            
+            var jvalue = $(".joindate").val();            
+            var doj = new Date(jvalue);           
+            console.log(doj);           
+            });
+
+           
+         });
+         
+         </script>
+     <script>
+
+
+     $(document).ready(function() {
+        $(".birthdate").change(function() {
+          var value = $(".birthdate").val();
+          var dob = new Date(value);
+          var today = new Date();
+          var age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000));
+          if (isNaN(age)) {
+            age = 0;
+          } else {
+            age = age;
+          }
+          $('.age').val(age);
+    //      console.log(age);
+        });
+      });
+      
+      </script>
+<script>
+    $(function(){
+   
+       $('#imgiven').on('input', function() {
+         calculate();
+       });
+       $('#imtotal').on('input', function() {
+        calculate();
+       });
+       function calculate(){
+           var pPos = parseInt($('#imgiven').val()); 
+           var pEarned = parseInt($('#imtotal').val());
+           var perc="";
+           if(isNaN(pPos) || isNaN(pEarned)){
+               perc=" ";
+              }else{
+              perc = ((pEarned/pPos) * 100).toFixed(1);
+              }
+   
+           $('#impersentage').val(perc);
+       }
+   
+   });
+   </script>
+<script>
+    $(function(){
+   
+       $('#uggiven').on('input', function() {
+         calculate();
+       });
+       $('#ugtotal').on('input', function() {
+        calculate();
+       });
+       function calculate(){
+           var pPos = parseInt($('#uggiven').val()); 
+           var pEarned = parseInt($('#ugtotal').val());
+           var perc="";
+           if(isNaN(pPos) || isNaN(pEarned)){
+               perc=" ";
+              }else{
+              perc = ((pEarned/pPos) * 100).toFixed(1);
+              }
+   
+           $('#ugpersentage').val(perc);
+       }
+   
+   });
+   </script>
+
+<script>
+    $(function(){
+        $('#imgiven').on('input', function() {
+         calculate();
+       });
+       $('#imtotal').on('input', function() {
+        calculate();
+       });
+       $('#uggiven').on('input', function() {
+         calculate();
+       });
+       $('#ugtotal').on('input', function() {
+        calculate();
+       });
+       $('#pggiven').on('input', function() {
+         calculate();
+       });
+       $('#pgtotal').on('input', function() {
+        calculate();
+       });
+       function calculate(){
+           var imPos = parseInt($('#imgiven').val()); 
+           var imEarned = parseInt($('#imtotal').val());
+           var pgPos = parseInt($('#pggiven').val()); 
+           var pgEarned = parseInt($('#pgtotal').val());
+           var ugPos = parseInt($('#uggiven').val()); 
+           var ugEarned = parseInt($('#ugtotal').val());
+           var totaloverall = imPos+pgPos+ugPos ;
+           var totalgiver = imEarned+pgEarned+ugEarned; 
+           var perc="";
+
+           if(isNaN(totaloverall) || isNaN(totalgiver)){
+               perc=" ";
+              }else{
+              perc = ((totalgiver/totaloverall) * 100).toFixed(1);
+              }
+   
+           $('#overallpersentage').val(perc);
+       }
+   
+   });
+   </script>
+   <script>
+    //over all number calculate
+    $(function(){
+   
+   $('#pggiven').on('input', function() {
+     calculate();
+   });
+   $('#pgtotal').on('input', function() {
+    calculate();
+   });
+   function calculate(){
+       var pPos = parseInt($('#pggiven').val()); 
+       var pEarned = parseInt($('#pgtotal').val());
+       var perc="";
+       if(isNaN(pPos) || isNaN(pEarned)){
+           perc=" ";
+          }else{
+          perc = ((pEarned/pPos) * 100).toFixed(1);
+          }
+
+       $('#pgpersentage').val(perc);
+   }
+
+});
+   </script>
+    
+       
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
